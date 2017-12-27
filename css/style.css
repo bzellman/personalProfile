@@ -17,16 +17,6 @@ input {
   background: #ffffff;
   border-radius: 5px;
 }
-input[type=submit]{
-  width: auto;
-  padding: 5px 18px;
-  line-height: 25px;
-  text-shadow: none;
-  cursor: pointer;
-  box-shadow: none;
-  background: #333333;
-  color: #fff;
-}
 
 p{
   margin: 5px 0;
@@ -134,26 +124,37 @@ nav ul li a:hover{
   width: 100%;
 }
 
-
-#headline h3{
-  color: #fff;
-  background-color:#4d4d4d;
-  font-size: 25px;
-  font-weight: bold;
+#headline-display {
+  background-color: #4d4d4d;
   margin-bottom: 10px;
+  margin-left: 35px;
   padding: 10px 15px;
   border-radius: 15px 0 15px 0;
   display: inline-block;
-  height: 55px;
+  height: 25px;
+  width: 350px;
 }
 
-#headline p{
-  margin: 0 0 30px 0;
-  color: #4d4d4d;
+#headline h3{
+  color: #fff;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+#headline-info-display {
+  margin-left: 35px;
   background-color: #fff;
-  padding: 10px 15px;
   border-radius: 0 15px 0 15px;
   height: 135px;
+  width: 385px;
+}
+
+
+#headline p{
+  margin: 0 0 10px 0;
+  color: #4d4d4d;
+  padding: 10px 15px;
+
 }
 
 #spacer

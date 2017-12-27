@@ -3,9 +3,6 @@ headline_text_array = ["The heart and soul of a business is its people. Personal
 
 window.onload = function () {
 
-  var headline_title = document.getElementById('headline-title');
-  var headline_text = document.getElementById('headline-text');
-
   current_position_in_headline_array = 0;
   setInterval(changeHeadlineInfo, 5000);
 
@@ -14,8 +11,18 @@ window.onload = function () {
     if (headline_text_array.length == headline_title_array.length) {
       var number_of_items = headline_text_array.length;
 
-      headline_title.innerHTML = headline_title_array[current_position_in_headline_array];
-      headline_text.innerHTML = headline_text_array[current_position_in_headline_array];
+      // Use jQuery to select the element to fade out and then fade in with new text
+      $("#headline-title").text(function(){
+        $(this).fadeOut(1500, function (){
+            $(this).text(headline_title_array[current_position_in_headline_array]).fadeIn(1000);
+        });
+      });
+
+      $("#headline-text").text(function(){
+        $(this).fadeOut(1500, function (){
+          $(this).text(headline_text_array[current_position_in_headline_array]).fadeIn(1000);
+        });
+      });
 
       current_position_in_headline_array++;
 
@@ -24,10 +31,4 @@ window.onload = function () {
       }
     }
   }
-
-
-
-
-
-
 }
