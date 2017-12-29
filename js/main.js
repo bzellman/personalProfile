@@ -1,5 +1,5 @@
 headline_title_array = ["LEADERSHIP & TEAM FOCUS", "PROJECT MANAGEMENT", "VENDOR RELATIONS"];
-headline_text_array = ["The heart and soul of a business is its people. Personal and team development is always the cornerstone of a successful project.", "Capable of managing multiple areas of responsibility without sacrificing outcomes and seeing the big picture without missing any details.", "Making all the moving parts work together and establish clear channels of communication to ensure success."];
+headline_text_array = ["The heart and soul of a business is its people". "Personal and team development is always the cornerstone of a successful project.", "Capable of managing multiple areas of responsibility without sacrificing outcomes and seeing the big picture without missing any details.", "Making all the moving parts work together and establish clear channels of communication to ensure success."];
 
 window.onload = function () {
 
