@@ -203,6 +203,7 @@ nav ul li a:hover{
   margin-right: 1em;
 }
 
+
 #job-details {
   width:auto;
   overflow: hidden;
@@ -253,7 +254,8 @@ nav ul li a:hover{
   width: 49%;
   margin: 0 auto;
   padding-top: 0;
-  height: 310px;
+  height: 100%;
+  vertical-align:top;
 }
 
 #project img {
@@ -272,6 +274,7 @@ nav ul li a:hover{
   text-align: left;
   width: 70%;
   margin: auto;
+  height: 100%
 }
 
 
@@ -333,4 +336,100 @@ color:#ababab;
 float:left;
 width:280px;
 margin-right:20px;
+}
+
+
+/* Responsive Design */
+
+
+@media (max-width:800) {
+
+
+}
+
+@media (max-width:450px) {
+
+  #headline-div {
+    width: 100%;
+  }
+
+  #headline{
+    font-family: 'Open Sans', sans-serif;
+    line-height: 25px;
+    max-width: 900px;
+    /* Comment below out for prod. It's a hack  */
+    height: 0px;
+    /* height: 10px; */
+    position: absolute;
+    margin: auto;
+    /* float: left; */
+    position: relative;
+    width: auto;
+    max-width: 900px;
+    top: 55px;
+  }
+
+
+  #headline-display {
+    background-color: #4d4d4d;
+    margin-bottom: 10px;
+    padding: 10px 0px;
+    border-radius: 0px;
+    height: 25px;
+    width: 100%;
+    text-align: center;
+  }
+
+  #headline-info-display {
+
+    background-color: #fff;
+    border-radius: 0px;
+    height: 135px;
+    width: 100%;
+    text-align: left;
+    padding: 0px;
+  }
+
+
+  .imagejob {
+    margin: auto;
+    width: 100%;
+    padding-bottom: 20px;
+  }
+
+  .job-div{
+    padding: 10px;
+  }
+
+  #job img{
+    float: none;
+    display: block;
+    margin: auto;
+  }
+
+  .imagejob img {
+    float: none;
+    display: block;
+    margin: auto;
+  }
+
+  #job h3{
+    text-align: center;
+  }
+
+  #project {
+    float: none;
+    display: block;
+    width: 100%;
+    margin: auto;
+    padding-bottom: 20px;
+  }
+
+  #project img {
+    display: inline-block;
+    width: 100px;
+    margin: 0 auto;
+  }
+
+
 }
