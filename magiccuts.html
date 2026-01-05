@@ -1,0 +1,306 @@
+<!DOCTYPE HTML>
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>MagicCuts - Bluetooth Proximity for iOS Shortcuts</title>
+
+  <link rel="stylesheet" href="css/reset.css" type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"/>
+  <script src="js/modernizr-custom.min.js"></script>
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script src="js/prefixfree.min.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+
+  <style>
+    .app-header {
+      text-align: center;
+      padding: 40px 20px;
+    }
+    .app-icon {
+      width: 120px;
+      height: 120px;
+      border-radius: 22px;
+      margin-bottom: 20px;
+      background: linear-gradient(135deg, #007AFF 0%, #5856D6 100%);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .app-icon svg {
+      width: 60px;
+      height: 60px;
+      fill: white;
+    }
+    .feature-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      padding: 20px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .feature-item {
+      flex: 1 1 250px;
+      max-width: 280px;
+      text-align: center;
+      padding: 20px;
+    }
+    .feature-icon {
+      font-size: 40px;
+      margin-bottom: 15px;
+    }
+    .legal-section {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px 40px;
+      line-height: 1.8;
+    }
+    .legal-section h3 {
+      margin-top: 30px;
+      margin-bottom: 15px;
+      font-weight: bold;
+    }
+    .legal-section ul {
+      list-style-type: disc;
+      padding-left: 30px;
+      margin: 15px 0;
+    }
+    .legal-section li {
+      margin-bottom: 8px;
+    }
+    .back-link {
+      display: inline-block;
+      margin: 20px;
+      padding: 10px 20px;
+      background: #4d4d4d;
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+    .back-link:hover {
+      background: #012158;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="index.html" class="back-link">&larr; Back to Portfolio</a>
+    <div class="app-header">
+      <div class="app-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+        </svg>
+      </div>
+      <h1>MagicCuts</h1>
+      <p>Bluetooth device proximity detection for iOS Shortcuts</p>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#privacy">Privacy</a></li>
+        <li><a href="#terms">Terms</a></li>
+        <li><a href="#support">Support</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div id="spacer">
+    <h1 id="features">Features</h1>
+  </div>
+
+  <section class="container">
+    <h2 hidden>App Features</h2>
+    <div class="feature-grid">
+      <div class="feature-item">
+        <div class="feature-icon">📡</div>
+        <h3><strong>Bluetooth Discovery</strong></h3>
+        <p>Scan for nearby Bluetooth devices and see their signal strength in real-time.</p>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon">📱</div>
+        <h3><strong>Shortcuts Integration</strong></h3>
+        <p>Use with iOS Shortcuts to trigger automations based on device proximity.</p>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon">📊</div>
+        <h3><strong>Signal Thresholds</strong></h3>
+        <p>Set custom signal strength thresholds to define what "nearby" means for each device.</p>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon">🔒</div>
+        <h3><strong>Privacy First</strong></h3>
+        <p>All data stays on your device. No accounts, no cloud, no tracking.</p>
+      </div>
+    </div>
+  </section>
+
+  <div id="spacer">
+    <h1 id="privacy">Privacy Policy</h1>
+  </div>
+
+  <section class="legal-section">
+    <h2 hidden>Privacy Policy</h2>
+    <p><strong>Last updated:</strong> January 2025</p>
+
+    <h3>Overview</h3>
+    <p>MagicCuts is designed with privacy as a core principle. We do not collect, store, or transmit any personal data to external servers.</p>
+
+    <h3>Data Collection</h3>
+    <p>MagicCuts does <strong>not</strong> collect:</p>
+    <ul>
+      <li>Personal information</li>
+      <li>Device identifiers</li>
+      <li>Location data</li>
+      <li>Usage analytics</li>
+      <li>Advertising identifiers</li>
+    </ul>
+
+    <h3>Local Data Storage</h3>
+    <p>The app stores the following data locally on your device:</p>
+    <ul>
+      <li><strong>Monitored Devices:</strong> Bluetooth device identifiers (UUIDs), names you assign, and signal strength thresholds</li>
+      <li><strong>App Preferences:</strong> Your configured settings</li>
+    </ul>
+    <p>This data never leaves your device and is stored using Apple's secure SwiftData framework.</p>
+
+    <h3>Bluetooth Usage</h3>
+    <p>MagicCuts uses Bluetooth to:</p>
+    <ul>
+      <li>Discover nearby Bluetooth devices</li>
+      <li>Measure signal strength (RSSI) of devices</li>
+      <li>Check if monitored devices meet your configured proximity thresholds</li>
+    </ul>
+    <p>Bluetooth scanning is performed only when you actively use the app or when triggered by iOS Shortcuts.</p>
+
+    <h3>Third-Party Services</h3>
+    <p>MagicCuts does not integrate with any third-party analytics, advertising, or tracking services.</p>
+
+    <h3>Data Sharing</h3>
+    <p>We do not share any data with third parties because we do not collect any data.</p>
+
+    <h3>Children's Privacy</h3>
+    <p>MagicCuts does not collect data from anyone, including children under 13.</p>
+
+    <h3>Changes to This Policy</h3>
+    <p>We may update this privacy policy from time to time. Any changes will be posted on this page.</p>
+
+    <h3>Contact</h3>
+    <p>If you have questions about this privacy policy, please contact us at <a href="mailto:support@bradzellman.com">support@bradzellman.com</a>.</p>
+  </section>
+
+  <div id="spacer">
+    <h1 id="terms">Terms of Service</h1>
+  </div>
+
+  <section class="legal-section">
+    <h2 hidden>Terms of Service</h2>
+    <p><strong>Last updated:</strong> January 2025</p>
+
+    <h3>Acceptance of Terms</h3>
+    <p>By downloading, installing, or using MagicCuts ("the App"), you agree to be bound by these Terms of Service.</p>
+
+    <h3>Description of Service</h3>
+    <p>MagicCuts is an iOS application that allows you to:</p>
+    <ul>
+      <li>Discover nearby Bluetooth devices</li>
+      <li>Monitor specific devices for proximity</li>
+      <li>Integrate with iOS Shortcuts for automation</li>
+    </ul>
+
+    <h3>User Responsibilities</h3>
+    <p>You agree to:</p>
+    <ul>
+      <li>Use the App in compliance with all applicable laws</li>
+      <li>Not use the App to track devices without the owner's consent</li>
+      <li>Not reverse engineer, decompile, or disassemble the App</li>
+      <li>Not use the App for any unlawful purpose</li>
+    </ul>
+
+    <h3>Disclaimer of Warranties</h3>
+    <p>The App is provided "as is" without warranty of any kind. We do not guarantee that:</p>
+    <ul>
+      <li>The App will be error-free or uninterrupted</li>
+      <li>Bluetooth detection will be 100% accurate</li>
+      <li>The App will work with all Bluetooth devices</li>
+    </ul>
+
+    <h3>Limitation of Liability</h3>
+    <p>To the maximum extent permitted by law, we shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising from your use of the App.</p>
+
+    <h3>Intellectual Property</h3>
+    <p>The App and its original content, features, and functionality are owned by Brad Zellman and are protected by international copyright, trademark, and other intellectual property laws.</p>
+
+    <h3>Termination</h3>
+    <p>We may terminate or suspend your access to the App immediately, without prior notice, for any reason whatsoever.</p>
+
+    <h3>Changes to Terms</h3>
+    <p>We reserve the right to modify these terms at any time. Continued use of the App after changes constitutes acceptance of the new terms.</p>
+
+    <h3>Governing Law</h3>
+    <p>These terms shall be governed by the laws of the State of Texas, United States.</p>
+
+    <h3>Contact</h3>
+    <p>For questions about these terms, please contact us at <a href="mailto:support@bradzellman.com">support@bradzellman.com</a>.</p>
+  </section>
+
+  <div id="spacer">
+    <h1 id="support">Support</h1>
+  </div>
+
+  <section class="legal-section">
+    <h2 hidden>Support</h2>
+
+    <h3>Frequently Asked Questions</h3>
+
+    <p><strong>Q: Why can't the app find my Bluetooth device?</strong></p>
+    <p>A: Make sure Bluetooth is enabled on your device and the target device is powered on and in range. Some devices may not broadcast their presence continuously.</p>
+
+    <p><strong>Q: What do the RSSI numbers mean?</strong></p>
+    <p>A: RSSI (Received Signal Strength Indicator) measures signal strength in dBm. Values closer to 0 indicate a stronger signal (device is closer). Typical ranges are -30 (very close) to -90 (far away).</p>
+
+    <p><strong>Q: How do I use MagicCuts with Shortcuts?</strong></p>
+    <p>A: Open the Shortcuts app, create a new shortcut, and search for "MagicCuts" actions. You can use "Is Device Nearby" to check if a monitored device meets your signal threshold.</p>
+
+    <p><strong>Q: Does the app work in the background?</strong></p>
+    <p>A: The app can check device proximity when triggered by Shortcuts, even if the app isn't open. However, continuous background scanning is limited by iOS to preserve battery.</p>
+
+    <h3>Contact Support</h3>
+    <p>For additional help, please email us at:</p>
+    <p><a href="mailto:support@bradzellman.com">support@bradzellman.com</a></p>
+
+    <h3>Report a Bug</h3>
+    <p>Found a bug? Please include:</p>
+    <ul>
+      <li>Your iOS version</li>
+      <li>Device model</li>
+      <li>Steps to reproduce the issue</li>
+      <li>Any error messages you see</li>
+    </ul>
+  </section>
+
+  <footer>
+    <div id="bio-outter-div">
+      <div id="bio-inner-div">
+        <div id="about-column1">
+          <figure>
+            <figcaption>
+              <strong>MagicCuts</strong>
+            </figcaption>
+          </figure>
+          <p>
+            MagicCuts brings Bluetooth device proximity detection to iOS Shortcuts, enabling powerful automations based on your physical environment.
+          </p>
+          <p style="margin-top: 15px;">
+            <a href="index.html" style="color: #ccc;">&larr; Back to Brad Zellman's Portfolio</a>
+          </p>
+        </div>
+        <div id="about-column2">
+          <p style="text-align: center; color: #888; font-size: 14px;">&copy; 2025 Brad Zellman<br/>All Rights Reserved</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
